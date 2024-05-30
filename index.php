@@ -1,1 +1,1 @@
-<?php echo 'extended and altered hello world';
+<?php echo 'Hi there, how are you today?';
