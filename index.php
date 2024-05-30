@@ -1,1 +1,1 @@
-<?php echo 'Hi there, how are you today?';
+<?php for ($i = 0; $i < rand(1, 10); $i++) { echo 'Iteration ' . ($i+1) . '\n'; } ?>
