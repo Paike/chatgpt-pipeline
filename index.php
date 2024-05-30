@@ -1,1 +1,3 @@
-more tests
+<?php
+
+echo 'hello world';
