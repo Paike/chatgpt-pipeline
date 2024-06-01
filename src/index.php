@@ -18,7 +18,7 @@ echo implode(' ', $multipliedNumbers);
 
 $index = 0;
 $length = count($numbers);
-while($index < $length){
+while($index &lt; $length){
     echo $numbers[$index] . ' ';
     $index++;
 }
