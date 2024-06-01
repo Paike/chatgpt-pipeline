@@ -1,13 +1,10 @@
 <?php
 for ($i = 0; $i < rand(1, 10); $i++) {
-echo 'Iteration ' . ($i+1) . '\
-';
+echo 'Iteration ' . ($i+1) . '\n';
 if ($i % 2 == 0) {
-echo 'Even iteration\
-';
+echo 'Even iteration\n';
 } else {
-echo 'Odd iteration\
-';
+echo 'Odd iteration\n';
 }
 }
 ?>
