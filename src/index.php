@@ -1,5 +1,5 @@
 <?php
-$numbers = [4, 6, 8, 10, 12];
+$numbers = [1, 3, 5, 7, 9];
 
 // Iterating through the numbers array and displaying each number squared
 foreach($numbers as $number){
@@ -13,9 +13,9 @@ foreach($numbers as $number){
 }
 echo 'Sum: ' . $sum;
 
-// Dividing each number in the array by 2 and storing in a new array
+// Dividing each number in the array by 3 and storing in a new array
 $dividedNumbers = [];
 foreach($numbers as $number){
-    $dividedNumbers[] = $number / 2;
+    $dividedNumbers[] = $number / 3;
 }
 echo implode(' ', $dividedNumbers);
