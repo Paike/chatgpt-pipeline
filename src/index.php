@@ -1,21 +1,21 @@
 <?php
-$numbers = [1, 3, 5, 7, 9];
+$numbers = [2, 4, 6, 8, 10];
 
-// Iterating through the numbers array and displaying each number squared
+// Iterating through the new numbers array and displaying each number cubed
 foreach($numbers as $number){
-    echo $number * $number . ' ';
+    echo $number * $number * $number . ' ';
 }
 
-// Calculating the sum of the numbers array
-$sum = 0;
+// Calculating the product of the numbers array
+$product = 1;
 foreach($numbers as $number){
-    $sum += $number;
+    $product *= $number;
 }
-echo 'Sum: ' . $sum;
+echo 'Product: ' . $product;
 
-// Dividing each number in the array by 3 and storing in a new array
-$dividedNumbers = [];
+// Subtracting 2 from each number in the array and storing in a new array
+$subtractedNumbers = [];
 foreach($numbers as $number){
-    $dividedNumbers[] = $number / 3;
+    $subtractedNumbers[] = $number - 2;
 }
-echo implode(' ', $dividedNumbers);
+echo implode(' ', $subtractedNumbers);
