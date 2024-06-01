@@ -1,5 +1,5 @@
 <?php
-$numbers = [1, 2, 3, 4, 5];
-foreach($numbers as $number){
-    echo $number . ' ';
+$colors = ['red', 'yellow', 'blue', 'green', 'orange'];
+foreach($colors as $color){
+    echo $color . ' ';
 }
