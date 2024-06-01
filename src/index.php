@@ -1,29 +1,21 @@
 <?php
 $numbers = [1, 2, 3, 4, 5];
 
-// Iterating through the numbers array and displaying each number multiplied by 2
+// Iterating through the numbers array and displaying each number squared
 foreach($numbers as $number){
-    echo $number * 2 . ' ';
+    echo $number * $number . ' ';
 }
 
-// Calculating the sum of the numbers array
-$sum = 0;
+// Calculating the product of the numbers array
+$product = 1;
 foreach($numbers as $number){
-    $sum += $number;
+    $product *= $number;
 }
-echo 'Sum: ' . $sum;
+echo 'Product: ' . $product;
 
-// Multiplying each number in the array by 3 and storing in a new array
-$multipliedNumbers = [];
+// Dividing each number in the array by 2 and storing in a new array
+$dividedNumbers = [];
 foreach($numbers as $number){
-    $multipliedNumbers[] = $number * 3;
+    $dividedNumbers[] = $number / 2;
 }
-echo implode(' ', $multipliedNumbers);
-
-// Using a while loop to display each number in the array
-$index = 0;
-$length = count($numbers);
-while($index < $length){
-    echo $numbers[$index] . ' ';
-    $index++;
-}
+echo implode(' ', $dividedNumbers);
