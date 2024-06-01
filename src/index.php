@@ -9,3 +9,16 @@ foreach($numbers as $number){
     $sum += $number;
 }
 echo 'Sum: ' . $sum;
+
+$multipliedNumbers = [];
+foreach($numbers as $number){
+    $multipliedNumbers[] = $number * 3;
+}
+echo implode(' ', $multipliedNumbers);
+
+$index = 0;
+$length = count($numbers);
+while($index < $length){
+    echo $numbers[$index] . ' ';
+    $index++;
+}
