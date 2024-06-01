@@ -1,4 +1,4 @@
 
     FROM php:8.3-apache
     COPY src/ /var/www/html
-    EXPOSE 8080
+    EXPOSE 80
