@@ -1,14 +1,19 @@
 <?php
-$sum = 0;
-$i = 1;
-while ($i <= 10) {
-    $sum += $i;
-    if ($i % 2 == 0) {
-        echo "$i is even.\n";
+$numbers = [1, 2, 3, 4, 5];
+echo 'Numbers greater than 3: ';
+foreach ($numbers as $number) {
+    if ($number > 3) {
+        echo $number . ' ';}
+}
+
+$i = 0;
+while ($i < count($numbers)) {
+    if ($numbers[$i] % 2 == 0) {
+        echo $numbers[$i] . ' is even. ';
     } else {
-        echo "$i is odd.\n";
+        echo $numbers[$i] . ' is odd. ';
     }
     $i++;
 }
-echo "The sum of numbers from 1 to 10 is: $sum";
+
 ?>
