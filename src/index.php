@@ -1,25 +1,14 @@
 <?php
-$names = ['Alice', 'Bob', 'Charlie', 'David', 'Eve'];
-
-$counter = 0;
-while($counter < count($names)) {
-    echo $names[$counter] . ' ';
-    $counter++;
+$sum = 0;
+$i = 1;
+while ($i <= 10) {
+    $sum += $i;
+    if ($i % 2 == 0) {
+        echo "$i is even.\n";
+    } else {
+        echo "$i is odd.\n";
+    }
+    $i++;
 }
-
-$totalLength = array_reduce($names, function($carry, $name) {
-    return $carry + strlen($name);
-}, 0);
-
-if($totalLength > 20) {
-    echo '
-Total length of names is greater than 20';
-} else {
-    echo '
-Total length of names is not greater than 20';
-}
-
-$uppercaseNames = array_map(function($name) {
-    return strtoupper($name);
-}, $names);
-echo implode(' ', $uppercaseNames);
+echo "The sum of numbers from 1 to 10 is: $sum";
+?>
