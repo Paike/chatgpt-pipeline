@@ -1,21 +1,25 @@
 <?php
-$numbers = [3, 5, 7, 9, 11, 13];
+$names = ['Alice', 'Bob', 'Charlie', 'David', 'Eve'];
 
-// Using a for loop to iterate through the numbers array and displaying each number multiplied by 2
-for($i = 0; $i < count($numbers); $i++) {
-    echo $numbers[$i] * 2 . ' ';
+$counter = 0;
+while($counter < count($names)) {
+    echo $names[$counter] . ' ';
+    $counter++;
 }
 
-// Checking if sum of numbers is greater than 50
-$sum = array_sum($numbers);
-if($sum > 50) {
-    echo 'Sum is greater than 50';
+$totalLength = array_reduce($names, function($carry, $name) {
+    return $carry + strlen($name);
+}, 0);
+
+if($totalLength > 20) {
+    echo '
+Total length of names is greater than 20';
 } else {
-    echo 'Sum is not greater than 50';
+    echo '
+Total length of names is not greater than 20';
 }
 
-// Subtracting 1 from each number in the array and storing in a new array
-$subtractedNumbers = array_map(function($num) {
-    return $num - 1;
-}, $numbers);
-echo implode(' ', $subtractedNumbers);
+$uppercaseNames = array_map(function($name) {
+    return strtoupper($name);
+}, $names);
+echo implode(' ', $uppercaseNames);
